@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #080c14;
+  color: #ffffff;
+  font-family: 'Inter', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.header {
+  background-color: rgba(13, 20, 36, 0.9);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header-content {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 32px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.logo-img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.logo-highlight {
+  color: #5b52f9;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  font-size: 15px;
+  color: #9aa4b3;
+}
+
+.nav a:hover {
+  color: #ffffff;
+}
+
+.header-acoes {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-self: end;
+}
+
+.btn-login {
+  background-color: #5b52f9;
+  color: #ffffff;
+  padding: 10px 22px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.btn-login:hover {
+  background-color: #4038d4;
+}
+
+.btn-comprar {
+  background-color: #5b52f9;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+}
+
+.btn-comprar:hover {
+  background-color: #4038d4;
+}
+
+.btn-secundario {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.footer-novo {
+  margin-top: 80px;
+}
+
+.footer-topo {
+  border-top: 1px solid #5b52f9;
+  padding: 40px 0;
+}
+
+.footer-conteudo {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+
+.footer-logo {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 8px 48px;
+  justify-content: end;
+}
+
+.coluna-links {
+  display: grid;
+  gap: 8px;
+}
+
+.coluna-links a {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.coluna-links a:hover {
+  color: #5b52f9;
+}
+
+.footer-base {
+  border-top: 1px solid #5b52f9;
+  padding: 20px 0;
+  text-align: center;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.pagina-carrinho {
+  padding: 48px 24px;
+  max-width: 900px;
+}
+
+.titulo-pagina {
+  font-size: 22px;
+  margin-bottom: 24px;
+}
+
+.carrinho-vazio {
+  background-color: #0d1424;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 80px 24px;
+  display: grid;
+  place-items: center;
+  gap: 12px;
+  text-align: center;
+}
+
+.icone-vazio {
+  font-size: 40px;
+  opacity: 0.5;
+}
+
+.carrinho-vazio p {
+  color: #9aa4b3;
+  font-size: 15px;
+}

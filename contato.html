@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - Key Master</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="contato.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header-content">
+      <a href="index.html" class="logo">
+        <img src="logo.png" alt="Key Master" class="logo-img">
+        Key<span class="logo-highlight">Master</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Início</a>
+        <a href="produtos.html">Produtos</a>
+        <a href="quem-somos.html">Quem somos</a>
+        <a href="contato.html">Contato</a>
+        <a href="pedidos.html">Meu carrinho</a>
+      </nav>
+      <div class="header-acoes">
+        <a href="produto-individual.html" class="btn-secundario">Ver Produto</a>
+        <a href="cadastro.html" class="btn-login">Login</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container pagina-contato">
+    <h1 class="titulo-pagina">Contato</h1>
+
+    <section class="grid-contato">
+
+      <div class="coluna-info">
+        <div class="card-info">
+          <h2>Fale Conosco</h2>
+          <div class="item-info">
+            <p class="item-titulo">📧 E-Mail</p>
+            <p class="item-valor">suporte@keymaster.com.br</p>
+          </div>
+          <div class="item-info">
+            <p class="item-titulo">💬 Chat Ao Vivo</p>
+            <p class="item-valor">Disponível 24/7 no site</p>
+          </div>
+          <hr class="divisoria">
+          <p class="tempo-resposta">Tempo médio de resposta: menos de 2 horas em dias úteis.</p>
+        </div>
+
+        <div class="card-suporte">
+          <p class="suporte-titulo">⚡ Suporte Prioritário</p>
+          <p class="suporte-texto">Informe o número do pedido para agilizar o atendimento.</p>
+        </div>
+      </div>
+
+      <div class="coluna-formulario">
+        <h2>Formulário de Contato</h2>
+        <form class="formulario-contato">
+          <div class="campo">
+            <label for="nome">Nome Completo*</label>
+            <input type="text" id="nome" placeholder="Seu Nome">
+          </div>
+          <div class="campo">
+            <label for="email">E-mail *</label>
+            <input type="email" id="email" placeholder="seu@email.com">
+          </div>
+          <div class="campo">
+            <label for="assunto">Assunto*</label>
+            <select id="assunto">
+              <option>Selecione...</option>
+              <option>Dúvida sobre pedido</option>
+              <option>Problema com chave</option>
+              <option>Reembolso</option>
+              <option>Outro</option>
+            </select>
+          </div>
+          <div class="campo">
+            <label for="pedido">Número do Pedido (opcional)</label>
+            <input type="text" id="pedido" placeholder="Ex: KS-2026-16723">
+          </div>
+          <div class="campo campo-largo">
+            <label for="mensagem">Mensagem*</label>
+            <textarea id="mensagem" rows="5" placeholder="Descreva sua dúvida ou problema em detalhes..."></textarea>
+          </div>
+          <button type="button" class="btn-comprar">Enviar Mensagem</button>
+        </form>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="footer-novo">
+    <div class="footer-topo">
+      <div class="container footer-conteudo">
+        <img src="logo.png" alt="Key Master" class="footer-logo">
+        <div class="footer-links">
+          <div class="coluna-links">
+            <a href="#">Lorem ipsum</a>
+            <a href="#">Lorem ipsum</a>
+            <a href="#">Lorem ipsum</a>
+          </div>
+          <div class="coluna-links">
+            <a href="#">Lorem ipsum</a>
+            <a href="#">Lorem ipsum</a>
+            <a href="#">Lorem ipsum</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-base">
+      <p>Todos os direitos reservados</p>
+    </div>
+  </footer>
+</body>
+</html>

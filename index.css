@@ -1,0 +1,312 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #080c14;
+  color: #ffffff;
+  font-family: 'Inter', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.header {
+  background-color: rgba(13, 20, 36, 0.9);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header-content {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 32px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.logo-img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.logo-highlight {
+  color: #5b52f9;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  font-size: 15px;
+  color: #9aa4b3;
+}
+
+.nav a:hover {
+  color: #ffffff;
+}
+
+.header-acoes {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-self: end;
+}
+
+.btn-login {
+  background-color: #5b52f9;
+  color: #ffffff;
+  padding: 10px 22px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.btn-login:hover {
+  background-color: #4038d4;
+}
+
+.btn-comprar {
+  background-color: #5b52f9;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+}
+
+.btn-comprar:hover {
+  background-color: #4038d4;
+}
+
+.btn-secundario {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.footer-novo {
+  margin-top: 80px;
+}
+
+.footer-topo {
+  border-top: 1px solid #5b52f9;
+  padding: 40px 0;
+}
+
+.footer-conteudo {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+
+.footer-logo {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 8px 48px;
+  justify-content: end;
+}
+
+.coluna-links {
+  display: grid;
+  gap: 8px;
+}
+
+.coluna-links a {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.coluna-links a:hover {
+  color: #5b52f9;
+}
+
+.footer-base {
+  border-top: 1px solid #5b52f9;
+  padding: 20px 0;
+  text-align: center;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.banner {
+  padding: 48px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background-image: linear-gradient(90deg, #080c14 20%, rgba(8, 12, 20, 0.5) 100%), url("tlou-banner-bg.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.banner-grid {
+  display: grid;
+  grid-template-columns: 460px 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.banner-img {
+  border-radius: 12px;
+  width: 100%;
+}
+
+.banner-info h1 {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.banner-meta {
+  display: flex;
+  gap: 16px;
+  color: #9aa4b3;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.stars {
+  color: #ffb020;
+}
+
+.banner-desc {
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.banner-desc-secundario {
+  color: #9aa4b3;
+  font-size: 14px;
+  max-width: 460px;
+  margin-bottom: 16px;
+}
+
+.preco-area {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.preco-antigo {
+  color: #9aa4b3;
+  text-decoration: line-through;
+  font-size: 14px;
+}
+
+.preco-novo {
+  color: #ffb020;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.desconto {
+  background-color: rgba(255, 176, 32, 0.15);
+  color: #ffb020;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 6px;
+}
+
+.destaques {
+  padding: 56px 0;
+}
+
+.titulo-secao {
+  font-size: 22px;
+  margin-bottom: 24px;
+}
+
+.grid-produtos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.card-produto {
+  background-color: #0d1424;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 16px;
+  display: grid;
+  gap: 6px;
+}
+
+.card-produto img {
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.card-tag {
+  color: #9aa4b3;
+  font-size: 12px;
+}
+
+.card-produto h3 {
+  font-size: 16px;
+}
+
+.card-precos {
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+  margin-bottom: 8px;
+}
+
+.card-precos .preco-novo {
+  font-size: 18px;
+}
+
+.card-destacado {
+  border-color: #5b52f9;
+}

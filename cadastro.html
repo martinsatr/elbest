@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entrar ou Criar Conta - Key Master</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+
+  <header class="header-simples">
+    <div class="container header-simples-content">
+      <a href="index.html" class="logo">
+        <img src="logo.png" alt="Key Master" class="logo-img">
+        Key<span class="logo-highlight">Master</span>
+      </a>
+      <a href="produto-individual.html" class="btn-secundario">Ver Produto</a>
+    </div>
+  </header>
+
+  <main class="container pagina-cadastro">
+    <section class="grid-cadastro">
+
+      <div class="coluna-entrar">
+        <h2 class="titulo-form">Entrar</h2>
+        <form class="formulario-entrar">
+          <div class="campo">
+            <label for="login-email">E-Mail *</label>
+            <input type="email" id="login-email" placeholder="seu@email.com">
+          </div>
+          <div class="campo">
+            <label for="login-senha">Senha *</label>
+            <input type="password" id="login-senha" placeholder="Mínimo 6 caracteres">
+          </div>
+          <button type="button" class="btn-comprar btn-largo">Entrar</button>
+          <a href="#" class="link-esqueceu">Esqueceu a senha?</a>
+        </form>
+      </div>
+
+      <div class="coluna-criar">
+        <h2 class="titulo-form">Criar Conta</h2>
+        <form class="formulario-criar">
+          <div class="campo">
+            <label for="nome-completo">Nome Completo *</label>
+            <input type="text" id="nome-completo" placeholder="Seu nome completo">
+          </div>
+          <div class="campo">
+            <label for="cadastro-email">E-Mail *</label>
+            <input type="email" id="cadastro-email" placeholder="seu@email.com">
+          </div>
+          <div class="campo">
+            <label for="cadastro-senha">Senha *</label>
+            <input type="password" id="cadastro-senha" placeholder="Mínimo 6 caracteres">
+          </div>
+          <div class="campo">
+            <label for="confirmar-senha">Confirmar Senha *</label>
+            <input type="password" id="confirmar-senha" placeholder="Repita a senha">
+          </div>
+          <label class="opcao-checkbox">
+            <input type="checkbox">
+            Aceito os Termos de Uso e a Política de Privacidade *
+          </label>
+          <button type="button" class="btn-comprar btn-largo">Criar Conta</button>
+        </form>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="footer-novo">
+    <div class="footer-topo">
+      <div class="container footer-conteudo">
+        <img src="logo.png" alt="Key Master" class="footer-logo">
+        <div class="footer-links">
+          <div class="coluna-links">
+            <a href="#">Lorem ipsum</a>
+            <a href="#">Lorem ipsum</a>
+            <a href="#">Lorem ipsum</a>
+          </div>
+          <div class="coluna-links">
+            <a href="#">Lorem ipsum</a>
+            <a href="#">Lorem ipsum</a>
+            <a href="#">Lorem ipsum</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-base">
+      <p>Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+</body>
+</html>
